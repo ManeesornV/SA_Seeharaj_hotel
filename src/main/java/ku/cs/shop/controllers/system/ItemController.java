@@ -1,0 +1,85 @@
+package ku.cs.shop.controllers.system;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import ku.cs.shop.models.AccountList;
+import ku.cs.shop.models.Book;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class ItemController {
+
+    @FXML private Label bookNameLabel;
+    @FXML private Label bookPriceLabel;
+    @FXML private ImageView img;
+
+    private Book book;
+    private String type;
+    private HomeController homeController;
+    private TypeBookController typeBookController;
+    private BookShopDetailController bookShopDetailController;
+    private ArrayList<Object> objectForPassing = new ArrayList<>();
+
+    public String setController(Object o, String type) {
+        if (type.equals("default")) {
+            this.homeController = (HomeController) o;
+        }
+        if (type.equals("byType")) {
+            this.typeBookController = (TypeBookController) o;
+        }
+        if (type.equals("byShop")) {
+            this.bookShopDetailController = (BookShopDetailController) o;
+        }
+        return this.type = type;
+    }
+
+    public void addBookToArrayList() {
+        objectForPassing.add(book);
+    }
+
+    public void setObjectForPassing(String type) {
+        ArrayList<Object> objects;
+        objectForPassing.clear();
+
+        if (type.equals("default")) {
+            objects = homeController.getObjectForPassing();
+            objectForPassing = objects;
+        }
+
+        if (type.equals("byType")) {
+            objects = typeBookController.getObjectForPassing();
+            objectForPassing = objects;
+        }
+        if (type.equals("byShop")) {
+            objects = bookShopDetailController.getObjectForPassing();
+            objectForPassing = objects;
+        }
+    }
+
+    public void setData(Book book) {
+        this.book = book;
+        changeData();
+    }
+
+    public void changeData() {
+        bookNameLabel.setText(book.getBookName());
+        bookPriceLabel.setText(String.format("%.02f",book.getBookPrice()) + " Baht.");
+        img.setImage(new Image(book.getPicturePath()));
+    }
+
+    // แสดงรายละเอียดหนังสือ
+    @FXML
+    public void handleSeeFullDetailButton(ActionEvent actionEvent) {
+        try {
+            setObjectForPassing(type);
+            addBookToArrayList();
+            com.github.saacsos.FXRouter.goTo("bookDetail", objectForPassing);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

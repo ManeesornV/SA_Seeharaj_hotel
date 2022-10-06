@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.system.BookShopDetailController">
+    <children>
+        <BorderPane layoutY="52.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <VBox prefHeight="120.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox prefHeight="69.0" prefWidth="1024.0">
+                     <children>
+                        <HBox fx:id="head11" prefHeight="69.0" prefWidth="1024.0" styleClass="backgroundColorInHeadPages" stylesheets="@style/style.css">
+                           <children>
+                              <ImageView fx:id="logoJavaPai" fitHeight="68.0" fitWidth="69.0" onMouseClicked="#mouseClickedInLogo" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/logoverLightBrown.png" />
+                                 </image>
+                              </ImageView>
+                              <Button mnemonicParsing="false" onAction="#handleAllTypeBookButton" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: #c9ad88; -fx-background-radius: 20;" text="หนังสือทั้งหมด" textFill="WHITE">
+                                 <font>
+                                    <Font name="JasmineUPC" size="25.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" top="13.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Pane maxWidth="136.0" minWidth="136.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                              <Button fx:id="status" mnemonicParsing="false" prefHeight="20.0" prefWidth="91.0" style="-fx-background-radius: 20;" text="Status" textFill="WHITE">
+                                 <font>
+                                    <Font name="JasmineUPC" size="25.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <stylesheets>
+                                    <URL value="@style/style.css" />
+                                    <URL value="@style/PrimaryTheme.css" />
+                                 </stylesheets>
+                                 <styleClass>
+                                    <String fx:value="font_rsu_12pt" />
+                                    <String fx:value="backgroundColorLightBrownButton" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets left="250.0" right="25.0" top="16.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#handleToInformationButton" prefHeight="46.0" prefWidth="202.0" style="-fx-background-radius: 30;" stylesheets="@style/PrimaryTheme.css" textFill="WHITE">
+                                 <font>
+                                    <Font name="JasmineUPC" size="25.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <graphic>
+                                    <Label fx:id="usernameInHead" alignment="CENTER" prefHeight="31.0" prefWidth="167.0" styleClass="font_rsu_12pt" stylesheets="@style/style.css" text="Username" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fx:id="img" fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="radius">
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="font_rsu_12pt" />
+                                    <String fx:value="backgroundColorLightBrownButton" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></HBox>
+                        <FlowPane alignment="TOP_CENTER" columnHalignment="CENTER" hgap="10.0" prefHeight="100.0" prefWidth="1024.0" style="-fx-background-color: #fff;" vgap="10.0">
+                            <padding>
+                                <Insets left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </FlowPane>
+                        <GridPane>
+                            <VBox.margin>
+                                <Insets bottom="20.0" />
+                            </VBox.margin>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="684.7999847412109" minWidth="10.0" prefWidth="684.7999847412109" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="969.1999816894531" minWidth="10.0" prefWidth="340.00001525878906" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="1024.0">
+                                    <children>
+                                        <Text fx:id="bookHeadLabel" fill="#a05e07" strokeType="OUTSIDE" strokeWidth="0.0" text="ประเภทของหนังสือ">
+                                            <HBox.margin>
+                                                <Insets left="50.0" top="20.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="JasmineUPC" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fill="#b09f9f" strokeType="OUTSIDE" strokeWidth="0.0" text="|">
+                                            <font>
+                                                <Font name="JasmineUPC Bold" size="36.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                        <Label fx:id="bookType" text="ประเภทที่คุณเลือก" textFill="#b09f9f">
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="20.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="JasmineUPC" size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </HBox>
+                                <HBox spacing="20.0" GridPane.columnIndex="1">
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                           <children>
+                              <HBox spacing="20.0" />
+                              <Button mnemonicParsing="false" onAction="#handleToPromotionPageButton" style="-fx-background-radius: 10;" text="โปรโมชัน" textFill="WHITE">
+                                 <stylesheets>
+                                    <URL value="@style/PrimaryTheme.css" />
+                                    <URL value="@style/style.css" />
+                                 </stylesheets>
+                                 <styleClass>
+                                    <String fx:value="font_jasmine_16pt" />
+                                    <String fx:value="backgroundColorLightBrownButton" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets left="220.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                                </HBox>
+                            </children>
+                        </GridPane>
+                    </children>
+                </VBox>
+            </top>
+            <center>
+                <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="500.0" prefWidth="1024.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                    <content>
+                        <FlowPane fx:id="bookListFlowPane" columnHalignment="CENTER" hgap="30.0" prefHeight="636.0" prefWidth="1022.0" style="-fx-background-color: #fff;" vgap="30.0">
+                            <padding>
+                                <Insets left="60.0" right="40.0" />
+                            </padding>
+                        </FlowPane>
+                    </content>
+                </ScrollPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

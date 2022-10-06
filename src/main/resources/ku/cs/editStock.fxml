@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.seller.EditBookController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox fx:id="head1" prefHeight="69.0" prefWidth="1024.0" styleClass="backgroundColorInHeadPages" stylesheets="@style/style.css">
+               <children>
+                  <ImageView fx:id="logoJavaPai" fitHeight="68.0" fitWidth="69.0" onMouseClicked="#mouseClickedInLogo" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logoverLightBrown.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#handleAllTypeBookButton" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: #c9ad88; -fx-background-radius: 20;" text="หนังสือทั้งหมด" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" top="13.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Pane maxWidth="136.0" minWidth="136.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="status" mnemonicParsing="false" prefHeight="20.0" prefWidth="91.0" style="-fx-background-radius: 20;" text="Status" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="25.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <stylesheets>
+                        <URL value="@style/style.css" />
+                        <URL value="@style/PrimaryTheme.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="font_rsu_12pt" />
+                        <String fx:value="backgroundColorLightBrownButton" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="250.0" right="25.0" top="16.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="202.0" style="-fx-background-radius: 30;" stylesheets="@style/PrimaryTheme.css" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="25.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Label fx:id="usernameInHead" alignment="CENTER" prefHeight="31.0" prefWidth="167.0" styleClass="font_rsu_12pt" stylesheets="@style/style.css" text="Username" textFill="WHITE">
+                           <graphic>
+                              <ImageView fx:id="img" fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="radius">
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="font_rsu_12pt" />
+                        <String fx:value="backgroundColorLightBrownButton" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <HBox prefHeight="694.0" prefWidth="326.0" style="-fx-background-color: #F5DEB3;" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane prefHeight="676.0" prefWidth="360.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="208.26669311523438" minHeight="10.0" prefHeight="208.26669311523438" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="132.9999755859375" minHeight="10.0" prefHeight="113.33330688476565" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="userImageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Default.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="98.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#handleToAccountDetailButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ข้อมูลส่วนตัว" textFill="WHITE" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleToOrderPageButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ประวัติการซื้อ" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleToSellerButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ข้อมูลการขาย" textFill="WHITE" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleToLogoutButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ออกจากระบบ" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="774.0" prefWidth="698.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox prefHeight="1075.0" prefWidth="694.0" style="-fx-background-color: ffffff;">
+                     <children>
+                        <HBox prefHeight="918.0" prefWidth="694.0" style="-fx-background-color: ffffff;">
+                           <children>
+                              <AnchorPane fx:id="anchorPaneCenter" prefHeight="918.0" prefWidth="712.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Label layoutX="40.0" layoutY="44.0" text="แก้ไขข้อมูลสินค้า" textFill="#a05e07">
+                                       <font>
+                                          <Font name="JasmineUPC" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <Line endX="513.066650390625" endY="-7.62939453125E-6" layoutX="140.0" layoutY="80.0" startX="-100.0" stroke="#a05e07" strokeMiterLimit="100.0" />
+                                    <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="150.0" layoutX="270.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@image/addBookIMG.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="addImgButton" graphicTextGap="2.0" layoutX="400.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleAddImageButton" prefHeight="35.0" prefWidth="33.0" style="-fx-background-color: c9ad88; -fx-background-radius: 20;" text="+" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="50.0" layoutY="330.0" text="ชื่อหนังสือ">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="375.0" layoutY="330.0" text="ชื่อผู้แต่ง">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bookNameTextField" layoutX="55.0" layoutY="360.0" onKeyReleased="#handleKeyBookName" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10; -fx-alignment: c9ad88;" />
+                                    <TextField fx:id="bookAuthorTextField" layoutX="380.0" layoutY="360.0" onKeyReleased="#handleKeyBookAuthor" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;" />
+                                    <Label layoutX="50.0" layoutY="425.0" text="รหัส ISBN">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="375.0" layoutY="710.0" text="ประเภทหนังสือ">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bookISBNTextField" layoutX="55.0" layoutY="455.0" onKeyReleased="#handleKeyBookISBN" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;" />
+                                    <Label layoutX="50.0" layoutY="710.0" text="รายละเอียดสินค้า">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="375.0" layoutY="520.0" text="จำนวนหน้า">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bookPageTextField" layoutX="380.0" layoutY="550.0" onKeyReleased="#handleKeyBookPage" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;" />
+                                    <Label layoutX="50.0" layoutY="520.0" text="สำนักพิมพ์">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bookPublisherTextField" layoutX="55.0" layoutY="550.0" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;" />
+                                    <Label layoutX="50.0" layoutY="615.0" text="จำนวนสินค้าในคลัง">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="375.0" layoutY="615.0" text="จำนวนสินค้าขั้นต่ำในคลัง">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bookStockTextField" layoutX="55.0" layoutY="645.0" onKeyReleased="#handleKeyBookStock" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;" />
+                                    <TextField fx:id="leastStockTextField" layoutX="380.0" layoutY="645.0" onKeyReleased="#handleKeyLeastStock" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;" />
+                                    <Label layoutX="375.0" layoutY="425.0" text="ราคาหนังสือ">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bookPriceTextField" layoutX="380.0" layoutY="455.0" onKeyReleased="#handleKeyBookPrice" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;" />
+                                    <Label fx:id="NotificationBookISBN" layoutX="55.0" layoutY="495.0" textFill="#f20505">
+                                       <font>
+                                          <Font name="JasmineUPC" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="NotificationBookPage" layoutX="387.0" layoutY="591.0" textFill="#f20505">
+                                       <font>
+                                          <Font name="JasmineUPC" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="NotificationBookStock" layoutX="55.0" layoutY="690.0" textFill="#f20505">
+                                       <font>
+                                          <Font name="JasmineUPC" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="NotificationLeastStock" layoutX="380.0" layoutY="690.0" textFill="#f20505">
+                                       <font>
+                                          <Font name="JasmineUPC" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="NotificationBookPrice" layoutX="387.0" layoutY="495.0" textFill="#f20505">
+                                       <font>
+                                          <Font name="JasmineUPC" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea fx:id="bookDetailTextArea" layoutX="55.0" layoutY="740.0" prefHeight="130.0" prefWidth="270.0" />
+                                    <MenuButton fx:id="menuButton" layoutX="380.0" layoutY="740.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="270.0" style="-fx-background-color: FFFCF1; -fx-background-radius: 10;">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="40.0" top="13.0" />
+                                       </HBox.margin>
+                                    </MenuButton>
+                                    <Label fx:id="bookNameTopicLabel" layoutX="255.0" layoutY="48.0" text="booknameTopicLabel" textFill="#c9ad88">
+                                       <font>
+                                          <Font name="JasmineUPC" size="32.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="bookNameTopicLabel1" layoutX="229.0" layoutY="34.0" text="|" textFill="#a05e07">
+                                       <font>
+                                          <Font name="JasmineUPC" size="60.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="690.0" style="-fx-background-color: ffffff;">
+                           <children>
+                              <FlowPane fx:id="flowPaneSubTypeBook" prefHeight="50.0" prefWidth="690.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="690.0">
+                           <children>
+                              <VBox prefHeight="50.0" prefWidth="380.0">
+                                 <children>
+                                    <Label fx:id="NotificationCantAdd" textFill="#f20505">
+                                       <font>
+                                          <Font name="JasmineUPC" size="24.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="20.0" top="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Button fx:id="editBookButton" mnemonicParsing="false" onAction="#handleEditBookButton" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: F99F28; -fx-background-radius: 10;" styleClass="font_jasmine_16pt" stylesheets="@style/PrimaryTheme.css" text="แก้ไขสินค้า" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="goToSellerStockButton" mnemonicParsing="false" onAction="#handleSellerStockButton" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: F99F28; -fx-background-radius: 10;" styleClass="font_jasmine_16pt" stylesheets="@style/PrimaryTheme.css" text="สินค้าทั้งหมด" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.seller.SellerStockController">
+   <children>
+      <BorderPane layoutX="-22.0" layoutY="3.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox fx:id="head1" prefHeight="69.0" prefWidth="1024.0" styleClass="backgroundColorInHeadPages" stylesheets="@style/style.css">
+               <children>
+                  <ImageView fx:id="logoJavaPai" fitHeight="68.0" fitWidth="69.0" onMouseClicked="#mouseClickedInLogo" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/logoverLightBrown.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#handleAllTypeBookButton" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: #c9ad88; -fx-background-radius: 20;" text="หนังสือทั้งหมด" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" top="13.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Pane maxWidth="136.0" minWidth="136.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="status" mnemonicParsing="false" prefHeight="20.0" prefWidth="91.0" style="-fx-background-radius: 20;" text="Status" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="25.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <stylesheets>
+                        <URL value="@style/style.css" />
+                        <URL value="@style/PrimaryTheme.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="font_rsu_12pt" />
+                        <String fx:value="backgroundColorLightBrownButton" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="250.0" right="25.0" top="16.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="202.0" style="-fx-background-radius: 30;" stylesheets="@style/PrimaryTheme.css" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="25.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <graphic>
+                        <Label fx:id="usernameInHead" alignment="CENTER" prefHeight="31.0" prefWidth="167.0" styleClass="font_rsu_12pt" stylesheets="@style/style.css" text="Username" textFill="WHITE">
+                           <graphic>
+                              <ImageView fx:id="img" fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="radius">
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="font_rsu_12pt" />
+                        <String fx:value="backgroundColorLightBrownButton" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <HBox prefHeight="694.0" prefWidth="326.0" style="-fx-background-color: #F5DEB3;">
+               <children>
+                  <GridPane prefHeight="676.0" prefWidth="360.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="208.26669311523438" minHeight="10.0" prefHeight="208.26669311523438" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="132.9999755859375" minHeight="10.0" prefHeight="113.33330688476565" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="userImageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Default.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="98.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#handleToAccountDetailButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ข้อมูลส่วนตัว" textFill="WHITE" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleToOrderPageButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ประวัติการซื้อ" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleToSellerButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ข้อมูลการขาย" textFill="WHITE" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleToLogoutButton" prefHeight="60.0" prefWidth="200.0" stylesheets="@style/PrimaryTheme.css" text="ออกจากระบบ" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="JasmineUPC" size="32.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="70.0" top="10.0" />
+                           </GridPane.margin>
+                           <styleClass>
+                              <String fx:value="font_jasmine_20pt" />
+                              <String fx:value="bevel-brown" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="64.0" prefWidth="698.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="234.0" text="สินค้าทั้งหมด" textFill="#b4875e">
+                           <font>
+                              <Font name="JasmineUPC" size="42.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleToPromotionPageButton" style="-fx-background-radius: 10;" text="โปรโมชัน" textFill="WHITE">
+                           <stylesheets>
+                              <URL value="@style/PrimaryTheme.css" />
+                              <URL value="@style/style.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="font_jasmine_16pt" />
+                              <String fx:value="backgroundColorLightBrownButton" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="350.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="scoll" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="500.0" prefWidth="698.0" style="-fx-background-color: fffff;" VBox.vgrow="ALWAYS">
+                     <content>
+                        <FlowPane fx:id="flowPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ffffff;" />
+                     </content>
+                  </ScrollPane>
+                  <HBox prefHeight="62.0" prefWidth="698.0">
+                     <children>
+                        <Button fx:id="orderListButtonn" mnemonicParsing="false" onAction="#handleOrderListButton" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 10;" styleClass="bevel-orange" stylesheets="@style/PrimaryTheme.css" text="รายการสั่งซื้อ" textFill="WHITE">
+                           <font>
+                              <Font name="JasmineUPC" size="28.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="360.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="addStockButton" mnemonicParsing="false" onAction="#handleAddStockButton" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 10;" styleClass="bevel-orange" stylesheets="@style/PrimaryTheme.css" text="เพิ่มสินค้า" textFill="WHITE">
+                           <font>
+                              <Font name="JasmineUPC" size="28.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

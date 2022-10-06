@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="390.0" prefWidth="470.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.system.ReportingInformationController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#fffcf1" height="390.0" stroke="#714c08" strokeType="INSIDE" strokeWidth="4.0" width="470.0" AnchorPane.topAnchor="0.0" />
+      <VBox alignment="CENTER" layoutX="100.0" layoutY="14.0" maxHeight="180.0" maxWidth="270.4" minHeight="180.0" minWidth="270.4">
+         <children>
+            <ImageView fx:id="reportImage" fitHeight="180.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="37.0" layoutY="357.4" prefHeight="28.0" prefWidth="388.0" AnchorPane.bottomAnchor="5.0">
+         <children>
+            <Text fill="#717171" strokeType="OUTSIDE" strokeWidth="0.0" text="รายงานโดย : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="2.0" />
+               </HBox.margin>
+            </Text>
+            <Label fx:id="reporterLabel" text="Reporter" textFill="#717171">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="18.0" layoutY="232.0" prefHeight="120.0" prefWidth="430.0">
+         <children>
+            <Label fx:id="informationLabel" alignment="CENTER" prefHeight="120.0" prefWidth="430.0" text="Report Information" textFill="#7e541d" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="437.0" layoutY="13.0" onMouseClicked="#handleCancelButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/cancel.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="reportTypeLabel" layoutX="18.0" layoutY="201.0" text="Report Type" textFill="#53320d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="312.0" layoutY="162.0" mnemonicParsing="false" onAction="#handFullImageButton" style="-fx-background-color: FFFFFF;" text="ดูรูปเต็ม" />
+   </children>
+</AnchorPane>

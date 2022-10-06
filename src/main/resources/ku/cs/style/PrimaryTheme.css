@@ -1,0 +1,128 @@
+
+@font-face
+{
+    font-family: 'RSU_Regular';
+    font-style: normal;
+    src: url('../font/RSU_Regular.ttf');
+
+}
+
+.root {
+    -fx-font-size: 20pt;
+    -fx-background-color:  #F99F28;
+    -fx-font-family: 'RSU_Regular';
+}
+
+.font_jasmine_20pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 20pt;
+}
+
+.font_jasmine_25pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 25pt;
+}
+
+.font_jasmine_30pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 30pt;
+}
+
+.font_rsu_12pt {
+    -fx-font-family: 'RSU_Regular' ;
+    -fx-font-size : 12pt;
+}
+
+.font_rsu_18pt {
+    -fx-font-family: 'RSU_Regular' ;
+    -fx-font-size : 18pt;
+}
+
+.font_rsu_16pt {
+    -fx-font-family: 'RSU_Regular';
+    -fx-font-size: 16pt;
+}
+
+.font_jasmine_16pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 16pt;
+}
+
+.bevel-grey {
+    -fx-color-one: #B78748;
+    -fx-color-two: #B78748;
+    -fx-color-three: #B78748;
+    -fx-background-radius: 20;
+    -fx-background-color:
+            linear-gradient(#fcfcfc 0%, -fx-color-two 20%, -fx-color-one 100%),
+            linear-gradient(#dddddd 0%, -fx-color-three 50%);
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.bevel-grey:hover {
+    -fx-color-one: rgba(149, 138, 132, 0.88);
+    -fx-color-two: rgba(149, 138, 132, 0.88);
+    -fx-color-three: rgba(149, 138, 132, 0.88);
+}
+
+.bevel-red {
+    -fx-color-one: #ffffff;
+    -fx-color-two: #ffffff;
+    -fx-color-three: #ffffff;
+    -fx-background-radius: 60;
+    -fx-border-radius: 20;
+    -fx-background-color:
+            linear-gradient(#ffffff 0%, -fx-color-two 100%, -fx-color-one 100%),
+            linear-gradient(#ffffff 0%, -fx-color-three 10%);
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: #000000;
+}
+
+.bevel-red:hover {
+    -fx-color-one: rgba(255, 0, 0, 0.88);
+    -fx-color-two: rgba(246, 0, 0, 0.88);
+    -fx-color-three: rgba(255, 255, 255, 0.88);
+}
+
+.bevel-brown {
+    -fx-color-one: #B4875E;
+    -fx-color-two: #B4875E;
+    -fx-color-three: #B4875E;
+    -fx-background-radius: 10;
+    -fx-border-radius: 20;
+    -fx-background-color:
+            linear-gradient(#ffffff 0%, -fx-color-two 100%, -fx-color-one 100%),
+            linear-gradient(#ffffff 0%, -fx-color-three 0%);
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: #ffffff;
+}
+.bevel-brown:hover{
+    -fx-color-one: rgb(212, 163, 126);
+    -fx-color-two: rgb(212, 163, 126);
+    -fx-color-three: rgb(212, 163, 126);
+    -fx-effect: dropshadow( three-pass-box, rgb(180, 135, 94), 5, 0.0, 0, 1);
+}
+
+.bevel-orange {
+    -fx-color-one: #F99F28;
+    -fx-color-two: #F99F28;
+    -fx-color-three: #F99F28;
+    -fx-background-color:
+            linear-gradient(#ffffff 0%, -fx-color-two 0%, -fx-color-one 100%),
+            linear-gradient(#ffffff 0%, -fx-color-three 0%);
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-text-fill: #ffffff;
+}
+.bevel-orange:hover{
+    -fx-color-one: rgb(255, 136, 173);
+    -fx-color-two: rgb(255, 136, 173);
+    -fx-color-three: rgb(255, 136, 173);
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 136, 173), 5, 0.0, 0, 1);
+}
+

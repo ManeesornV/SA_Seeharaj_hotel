@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="651.0" prefWidth="940.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.scene.AdminInfoChoiceController">
+    <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <HBox maxHeight="250.0" minHeight="250.0" prefHeight="260.0" prefWidth="200.0">
+                  <children>
+                      <GridPane maxWidth="200.0" minWidth="200.0" onMouseClicked="#handleChoice1Click" prefHeight="260.0" prefWidth="200.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                          <children>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@image/fresh.png" />
+                                  </image>
+                              </ImageView>
+                              <Rectangle height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" GridPane.rowIndex="1">
+                                  <fill>
+                                      <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                          <stops>
+                                              <Stop>
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="0.007653061224489797">
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="1.0">
+                                                  <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                                                  </color>
+                                              </Stop>
+                                          </stops>
+                                      </LinearGradient>
+                                  </fill>
+                              </Rectangle>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="F R E S H">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="สาวน้อยร้อยสามี" />
+                           </children>
+                        </VBox>
+                          </children>
+                      </GridPane>
+                      <Pane minWidth="46.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                      <GridPane maxWidth="200.0" minWidth="200.0" onMouseClicked="#handleChoice2Click" prefHeight="260.0" prefWidth="200.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                          <children>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@image/tam.png" />
+                                  </image>
+                              </ImageView>
+                              <Rectangle height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" GridPane.rowIndex="1">
+                                  <fill>
+                                      <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                          <stops>
+                                              <Stop>
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="0.007653061224489797">
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="1.0">
+                                                  <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                                                  </color>
+                                              </Stop>
+                                          </stops>
+                                      </LinearGradient>
+                                  </fill>
+                              </Rectangle>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="T O M T A M">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="มังกรน้อยคอยรัก" />
+                           </children>
+                        </VBox>
+                          </children>
+                      </GridPane>
+                      <Pane minWidth="46.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                      <GridPane maxWidth="200.0" minWidth="200.0" onMouseClicked="#handleChoice3Click" prefHeight="260.0" prefWidth="200.0">
+                          <columnConstraints>
+                              <ColumnConstraints />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                          <children>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                  <image>
+                                      <Image url="@image/kwan.png" />
+                                  </image>
+                              </ImageView>
+                              <Rectangle height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                  <fill>
+                                      <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                          <stops>
+                                              <Stop>
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="0.007653061224489797">
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="1.0">
+                                                  <color>
+                                                      <Color red="0.11999999731779099" green="0.5746666789054871" blue="1.0" opacity="0.0" />
+                                                  </color>
+                                              </Stop>
+                                          </stops>
+                                      </LinearGradient>
+                                  </fill>
+                              </Rectangle>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K W A N">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="รักนะคนดี คนดีที่มีเงิน" />
+                           </children>
+                        </VBox>
+                          </children>
+                      </GridPane>
+                      <Pane minWidth="46.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                      <GridPane maxWidth="200.0" minWidth="200.0" onMouseClicked="#handleChoice4Click" prefHeight="260.0" prefWidth="200.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                          <children>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@image/frince.png" />
+                                  </image>
+                              </ImageView>
+                              <Rectangle height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" GridPane.rowIndex="1">
+                                  <fill>
+                                      <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                                          <stops>
+                                              <Stop>
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="0.007653061224489797">
+                                                  <color>
+                                                      <Color red="0.7176470756530762" green="0.529411792755127" blue="0.2823529541492462" />
+                                                  </color>
+                                              </Stop>
+                                              <Stop offset="1.0">
+                                                  <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                                                  </color>
+                                              </Stop>
+                                          </stops>
+                                      </LinearGradient>
+                                  </fill>
+                              </Rectangle>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="F R I N C E">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="อยากเล่นสเก็ต" />
+                           </children>
+                        </VBox>
+                          </children>
+                      </GridPane>
+                  </children>
+              </HBox>
+            <Pane maxHeight="6.0" minHeight="6.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Pane maxHeight="371.0" minHeight="371.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <GridPane fx:id="gridInfo" alignment="CENTER" prefHeight="6.0" prefWidth="0.0">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: C9AD88;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.scene.AboutUsController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#ffffffcb" height="728.0" strokeType="INSIDE" width="994.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="20.0" />
+      <Line endX="802.8929443359375" endY="-7.62939453125E-6" layoutX="144.0" layoutY="65.0" startX="-100.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" />
+      <Button fx:id="aboutUsButton" layoutX="43.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleAboutUsButton" style="-fx-background-color: transparent;" text="เกี่ยวกับ JAVAPAI">
+         <font>
+            <Font name="JasmineUPC" size="24.0" />
+         </font>
+      </Button>
+      <Line endX="100.0" layoutX="114.0" layoutY="50.0" rotate="90.0" startX="81.24583435058594" startY="0.41674506664276123" />
+      <Button fx:id="adminInfoButton" layoutX="208.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleAdminInfoButton" style="-fx-background-color: transparent;" text="ข้อมูลผู้พัฒนา">
+         <font>
+            <Font name="JasmineUPC" size="24.0" />
+         </font>
+      </Button>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="82.0">
+         <children>
+            <GridPane fx:id="gridHeadChoice" prefHeight="30.0" prefWidth="46.0">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </HBox>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="965.0" layoutY="31.0" onMouseClicked="#handleBackToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/BackIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

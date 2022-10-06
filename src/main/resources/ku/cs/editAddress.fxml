@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #c9ad88;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.user.EditAddressController">
+   <children>
+      <VBox layoutX="282.0" layoutY="33.0" prefHeight="625.0" prefWidth="378.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <AnchorPane prefHeight="625.0" prefWidth="378.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+               <children>
+                  <Button layoutX="242.0" layoutY="631.0" mnemonicParsing="false" onAction="#handleGoToInformationPageWhenEditAddress" prefHeight="28.0" prefWidth="74.0" style="-fx-background-color: F99F28;" stylesheets="@style/PrimaryTheme.css" text="บันทึก" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="font_jasmine_16pt" />
+                        <String fx:value="bevel-orange" />
+                     </styleClass>
+                  </Button>
+                  <Button layoutX="157.0" layoutY="631.0" mnemonicParsing="false" onAction="#handleGotoInformationPageWhenCancelEditAddress" prefHeight="28.0" prefWidth="74.0" style="-fx-background-color: F99F28;" stylesheets="@style/PrimaryTheme.css" text="ยกเลิก" textFill="WHITE">
+                     <font>
+                        <Font name="JasmineUPC" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="font_jasmine_16pt" />
+                        <String fx:value="bevel-orange" />
+                     </styleClass>
+                  </Button>
+                  <Text layoutX="152.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="แก้ไขข้อมูลที่อยู่">
+                     <font>
+                        <Font name="JasmineUPC" size="36.0" />
+                     </font>
+                  </Text>
+                  <Line endX="178.6666259765625" endY="-1.52587890625E-5" layoutX="178.0" layoutY="33.0" startX="-63.0" startY="-1.52587890625E-5" />
+                  <Text layoutX="31.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="รายละเอียด*">
+                     <font>
+                        <Font name="JasmineUPC" size="30.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="editAddressTextField" alignment="TOP_LEFT" layoutX="41.0" layoutY="174.0" prefHeight="240.0" prefWidth="391.0" promptText="รายละเอียดที่อยู่อาศัยของคุณ" style="-fx-background-color: FFFCF1; -fx-border-color: C9AD88; -fx-border-radius: 5;">
+                     <font>
+                        <Font name="JasmineUPC" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="#7d7d7d" layoutX="28.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ตัวอย่าง">
+                     <font>
+                        <Font name="JasmineUPC" size="30.0" />
+                     </font>
+                  </Text>
+                  <HBox layoutX="42.0" layoutY="507.0" prefHeight="77.0" prefWidth="391.0">
+                     <children>
+                        <Label text="บ้านเลขที่ 31 ซอย 1/15 หมู่ 1 หมู่บ้านสดใส ถ.บางรัก ต.บางเบา อ.บางมาก จ.กรุงเทพฯ 12345" textFill="#7d7d7d" wrapText="true">
+                           <font>
+                              <Font name="JasmineUPC" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="444.0" layoutY="63.0" text="         " />
+                  <Label layoutX="125.0" layoutY="662.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
