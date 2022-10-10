@@ -1,0 +1,41 @@
+
+.bg-navbar-color{
+    -fx-background-color: #A24D39;
+}
+
+.bg-navbar-button-color{
+    -fx-background-color: #A24D39;
+}
+
+.bg-navbar-button-color:hover{
+    -fx-background-color: #ffffff;
+}
+
+.bg-color{
+    -fx-background-color: #E7DFCE;
+}
+
+.bg-button-color{
+    -fx-background-color: #A24D39;
+}
+
+.font_jasmine_18pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 18pt;
+}
+
+.font_jasmine_20pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 20pt;
+}
+
+.font_jasmine_25pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 25pt;
+}
+
+.font_jasmine_30pt {
+    -fx-font-family: 'JasmineUPC';
+    -fx-font-size: 30pt;
+}
+

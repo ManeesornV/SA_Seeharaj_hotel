@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="8.0" layoutY="10.0" prefHeight="75.0" prefWidth="1024.0" styleClass="bg-navbar-color" stylesheets="@../style/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seeharaiLogo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="ข้อมูลห้องพัก/ห้องสัมมนา" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="ข้อมูลห้องอาหาร" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="โปรโมชัน" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="การชำระเงิน" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="15.0" right="10.0" top="13.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="10.799999952316284" layoutY="83.0" prefHeight="696.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="72.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="696.0" prefWidth="1024.0" styleClass="bg-color" stylesheets="@../style/style.css">
+               <children>
+                  <TextField layoutX="781.0" layoutY="14.0" prefHeight="30.0" prefWidth="164.0" promptText="ค้นหา" style="-fx-background-radius: 10;" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="15.0">
+                     <font>
+                        <Font name="Dubai Regular" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="974.0" layoutY="9.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="31.0" styleClass="bg-color" stylesheets="@../style/style.css" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="15.0">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <GridPane layoutX="13.0" layoutY="65.0" prefHeight="617.0" prefWidth="987.0" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="65.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Pane prefHeight="234.0" prefWidth="987.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;">
+                           <children>
+                              <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
+                                 <font>
+                                    <Font name="Dubai Regular" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="99.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
+                              <Text layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ : " />
+                              <Text layoutX="85.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ" />
+                              <Text layoutX="21.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะที่จอง : " />
+                              <Text layoutX="147.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะ" />
+                              <Text layoutX="22.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่จะเข้าใช้ :" />
+                              <Text layoutX="123.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่จองว่าจะเข้า" />
+                              <Text layoutX="21.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่จะเข้าใช้ :" />
+                              <Text layoutX="132.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่จองว่าจะเข้า" />
+                              <Text layoutX="21.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เข้าใช้บริการตามที่จองหรือไม่ : " />
+                              <Text layoutX="239.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ใช่/ไม่" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="167.0" prefWidth="987.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;" GridPane.rowIndex="2">
+                           <children>
+                              <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
+                                 <font>
+                                    <Font name="Dubai Regular" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="99.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
+                              <Text layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ : " />
+                              <Text layoutX="85.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ" />
+                              <Text layoutX="21.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะที่จอง : " />
+                              <Text layoutX="147.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะ" />
+                              <Text layoutX="22.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่จะเข้าใช้ :" />
+                              <Text layoutX="123.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่จองว่าจะเข้า" />
+                              <Text layoutX="21.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่จะเข้าใช้ :" />
+                              <Text layoutX="132.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่จองว่าจะเข้า" />
+                              <Text layoutX="21.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เข้าใช้บริการตามที่จองหรือไม่ : " />
+                              <Text layoutX="239.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ใช่/ไม่" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;" GridPane.rowIndex="4">
+                           <children>
+                              <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
+                                 <font>
+                                    <Font name="Dubai Regular" size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="99.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
+                              <Text layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ : " />
+                              <Text layoutX="85.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ" />
+                              <Text layoutX="21.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะที่จอง : " />
+                              <Text layoutX="147.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะ" />
+                              <Text layoutX="22.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่จะเข้าใช้ :" />
+                              <Text layoutX="123.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่จองว่าจะเข้า" />
+                              <Text layoutX="21.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่จะเข้าใช้ :" />
+                              <Text layoutX="132.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่จองว่าจะเข้า" />
+                              <Text layoutX="21.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เข้าใช้บริการตามที่จองหรือไม่ : " />
+                              <Text layoutX="239.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ใช่/ไม่" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </GridPane>
+                  <Text layoutX="444.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_25pt" text="ข้อมูลการจอง" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
