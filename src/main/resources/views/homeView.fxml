@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="-2.0" prefHeight="75.0" prefWidth="1028.0" styleClass="bg-navbar-color" stylesheets="@../style/style.css">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/seeharaiLogo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="ข้อมูลห้องพัก/ห้องสัมมนา" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="ข้อมูลห้องอาหาร" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="โปรโมชัน" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="การชำระเงิน" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" styleClass="bg-navbar-button-color" stylesheets="@../style/style.css" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Regular" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="13.0" />
+               </HBox.margin>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="15.0" right="10.0" top="13.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="0.7999999523162842" layoutY="73.0" prefHeight="696.0" prefWidth="1024.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="696.0" prefWidth="1024.0" styleClass="bg-color" stylesheets="@../style/style.css" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
