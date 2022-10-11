@@ -107,86 +107,86 @@
                      <children>
                         <Pane prefHeight="234.0" prefWidth="987.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;">
                            <children>
-                              <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
+                              <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
                                  <font>
                                     <Font name="Dubai Regular" size="15.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="99.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
-                              <Text layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ : " />
-                              <Text layoutX="85.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ" />
-                              <Text layoutX="21.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะที่จอง : " />
-                              <Text layoutX="147.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะ" />
-                              <Text layoutX="22.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่จะเข้าใช้ :" />
-                              <Text layoutX="123.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่จองว่าจะเข้า" />
-                              <Text layoutX="21.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่จะเข้าใช้ :" />
-                              <Text layoutX="132.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่จองว่าจะเข้า" />
-                              <Text layoutX="21.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เข้าใช้บริการตามที่จองหรือไม่ : " />
-                              <Text layoutX="239.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ใช่/ไม่" />
+                              <Text layoutX="99.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
+                              <Text layoutX="22.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="รายละเอียดห้อง :" />
+                              <Text layoutX="153.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงรายละเอียดห้องที่จอง" />
+                              <Text layoutX="22.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ประเภทห้อง : " />
+                              <Text layoutX="122.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงประเภทห้องที่จอง" />
+                              <Text layoutX="22.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่ทำการชำระเงิน :" />
+                              <Text layoutX="177.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่ทำการชำระเงิน" />
+                              <Text layoutX="22.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่ทำการชำระเงิน :" />
+                              <Text layoutX="188.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่ทำการชำระเงิน" />
                               <Button layoutX="884.0" layoutY="139.0" mnemonicParsing="false" style="-fx-background-radius: 20;" stylesheets="@../style/style.css" text="แก้ไข" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="font_jasmine_18pt" />
                                     <String fx:value="bg-button-color" />
                                  </styleClass>
                               </Button>
+                              <Text layoutX="22.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ยอดเงินที่ชำระ :" />
+                              <Text layoutX="143.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงยอดเงินที่ลูกค้าทำการชำระ" />
                            </children>
                         </Pane>
                         <Pane prefHeight="167.0" prefWidth="987.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;" GridPane.rowIndex="2">
                            <children>
-                              <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
+                              <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
                                  <font>
                                     <Font name="Dubai Regular" size="15.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="99.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
-                              <Text layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ : " />
-                              <Text layoutX="85.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ" />
-                              <Text layoutX="21.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะที่จอง : " />
-                              <Text layoutX="147.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะ" />
-                              <Text layoutX="22.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่จะเข้าใช้ :" />
-                              <Text layoutX="123.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่จองว่าจะเข้า" />
-                              <Text layoutX="21.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่จะเข้าใช้ :" />
-                              <Text layoutX="132.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่จองว่าจะเข้า" />
-                              <Text layoutX="21.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เข้าใช้บริการตามที่จองหรือไม่ : " />
-                              <Text layoutX="239.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ใช่/ไม่" />
-                              <Button layoutX="882.0" layoutY="141.0" mnemonicParsing="false" style="-fx-background-radius: 20;" stylesheets="@../style/style.css" text="แก้ไข" textFill="WHITE">
+                              <Text layoutX="99.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
+                              <Text layoutX="22.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="รายละเอียดห้อง :" />
+                              <Text layoutX="153.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงรายละเอียดห้องที่จอง" />
+                              <Text layoutX="22.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ประเภทห้อง : " />
+                              <Text layoutX="122.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงประเภทห้องที่จอง" />
+                              <Text layoutX="22.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่ทำการชำระเงิน :" />
+                              <Text layoutX="177.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่ทำการชำระเงิน" />
+                              <Text layoutX="22.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่ทำการชำระเงิน :" />
+                              <Text layoutX="188.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่ทำการชำระเงิน" />
+                              <Button layoutX="884.0" layoutY="139.0" mnemonicParsing="false" style="-fx-background-radius: 20;" stylesheets="@../style/style.css" text="แก้ไข" textFill="WHITE">
                                  <styleClass>
                                     <String fx:value="font_jasmine_18pt" />
                                     <String fx:value="bg-button-color" />
                                  </styleClass>
                               </Button>
+                              <Text layoutX="22.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ยอดเงินที่ชำระ :" />
+                              <Text layoutX="143.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงยอดเงินที่ลูกค้าทำการชำระ" />
                            </children>
                         </Pane>
                         <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ffffff; -fx-background-radius: 20;" GridPane.rowIndex="4">
                            <children>
-                              <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
+                              <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อผู้จอง :">
                                  <font>
                                     <Font name="Dubai Regular" size="15.0" />
                                  </font>
                               </Text>
-                              <Text layoutX="99.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
-                              <Text layoutX="22.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ : " />
-                              <Text layoutX="85.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เลขโต๊ะ" />
-                              <Text layoutX="21.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะที่จอง : " />
-                              <Text layoutX="147.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="จำนวนโต๊ะ" />
-                              <Text layoutX="22.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่จะเข้าใช้ :" />
-                              <Text layoutX="123.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่จองว่าจะเข้า" />
-                              <Text layoutX="21.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่จะเข้าใช้ :" />
-                              <Text layoutX="132.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่จองว่าจะเข้า" />
-                              <Text layoutX="21.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เข้าใช้บริการตามที่จองหรือไม่ : " />
-                              <Text layoutX="239.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ใช่/ไม่" />
-                              <Button layoutX="879.0" layoutY="141.0" mnemonicParsing="false" style="-fx-background-radius: 20;" stylesheets="@../style/style.css" text="แก้ไข" textFill="WHITE">
+                              <Text layoutX="99.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ชื่อของผู้จอง" />
+                              <Text layoutX="22.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="รายละเอียดห้อง :" />
+                              <Text layoutX="153.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงรายละเอียดห้องที่จอง" />
+                              <Text layoutX="22.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ประเภทห้อง : " />
+                              <Text layoutX="122.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงประเภทห้องที่จอง" />
+                              <Text layoutX="22.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="วันที่ทำการชำระเงิน :" />
+                              <Text layoutX="177.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงวันที่ทำการชำระเงิน" />
+                              <Text layoutX="22.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="เวลาที่ทำการชำระเงิน :" />
+                              <Text layoutX="188.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงเวลาที่ทำการชำระเงิน" />
+                              <Button layoutX="884.0" layoutY="139.0" mnemonicParsing="false" style="-fx-background-radius: 20;" stylesheets="@../style/style.css" text="แก้ไข" textFill="WHITE">
                                  <styleClass>
-                                    <String fx:value="bg-button-color" />
                                     <String fx:value="font_jasmine_18pt" />
+                                    <String fx:value="bg-button-color" />
                                  </styleClass>
                               </Button>
+                              <Text layoutX="22.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="ยอดเงินที่ชำระ :" />
+                              <Text layoutX="143.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_18pt" text="แสดงยอดเงินที่ลูกค้าทำการชำระ" />
                            </children>
                         </Pane>
                      </children>
                   </GridPane>
                   <Text layoutX="389.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_jasmine_25pt" text="ข้อมูลการจองห้องอาหาร" />
-                  <Button layoutX="46.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-radius: 10;" stylesheets="@../style/style.css" text="เพิ่มการจอง" textFill="WHITE">
+                  <Button layoutX="46.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-radius: 10;" stylesheets="@../style/style.css" text="เพิ่มการชำระเงิน" textFill="WHITE">
                      <styleClass>
                         <String fx:value="font_jasmine_18pt" />
                         <String fx:value="bg-button-color-blue" />

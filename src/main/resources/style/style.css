@@ -39,3 +39,21 @@
     -fx-font-size: 30pt;
 }
 
+.bg-arrow-color{
+    -fx-background-color: #3956A2;
+}
+
+.bg-button-color-blue{
+    -fx-background-color: #3956A2;
+}
+
+.bg-radius_20{
+    -fx-background-radius: 20;
+}
+
+.combobox_style{
+    -fx-background-color: #ffffff;
+    -fx-border-color:  #6b6b6b;
+    -fx-border-radius: 5;
+}
+
